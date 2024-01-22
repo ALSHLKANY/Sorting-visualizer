@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #87ceae;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  background-color: rgb(212, 212, 212);
+  padding: 10px;
+  color: #081f14;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-size: 20px;
+}
+select {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  display: block;
+  margin: 50px;
+  size: 50px;
+  font-size: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+option {
+  color: black;
+}
+.btns {
+  display: flex;
+  gap: 5px;
+}
+.btns *{
+  width: 130px;
+}
+
+button,
+input[type="button"] {
+  padding: 5px;
+  background-color: #0077b5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+  transition: 0.5s ease;
+}
+input[type="button"]:hover {
+  background-color: #00466b;
+}
+
+button {
+  background-color: green;
+  margin: 10px;
+}
+button:hover {
+  background-color: rgb(112, 158, 44);
+}
+
+.length,
+.speed {
+  display: flex;
+  flex-direction: column;
+}
+.speed {
+  margin-right: 10px;
+}
+span {
+  font-size: 16px;
+  margin: 10px;
+}
+.my-info {
+  display: flex;
+  gap: 10px;
+  margin-left: 40px;
+  flex-direction: column;
+  border-left: 3px solid;
+  padding-left: 10px;
+}
+.my-info i {
+  font-size: 30px;
+}
+input {
+  cursor: pointer;
+}
+i {
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+}
+
+a:first-child:hover i {
+  color: rgb(80, 80, 80);
+}
+
+a:last-child:hover i {
+  color: #0077b5;
+}
+.O {
+  position: absolute;
+  font-size: 30px;
+  color: #8f9689;
+  font-weight: bold;
+  top: 150px;
+  left: 50%;
+  transform: translatex(-50%);
+  transition: 0.3s ease;
+  z-index: -1;
+}
+.container {
+  display: flex;
+  gap: 3px;
+  padding: 5px;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 102px);
+}
+
+.bar {
+  width: 20px;
+  background-color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  max-width: 100px;
+  min-width: 5px;
+  transition: height 0.3s ease;
+}
+
+input[disabled],
+input[disabled]:hover {
+  background-color: gray;
+  pointer-events: "none";
+  cursor: default;
+  cursor: not-allowed;
+}

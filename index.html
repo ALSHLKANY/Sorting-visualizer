@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Sorting Visualizer</h1>
+      <div class="btns">
+        <input type="button" class="bubble-sort" value="Bubble sort" />
+        <input type="button" class="selection-sort" value="Selection sort" />
+        <input type="button" class="insertion-sort" value="Insertion sort" />
+        <input type="button" class="merge-sort" value="Merge sort" />
+        <input type="button" class="quick-sort" value="Quick sort" />
+        <!-- <input type="button" class="heap-sort" value="Heap sort" /> -->
+      </div>
+      <div class="speed">
+        <span>speed:</span>
+        <input
+          type="range"
+          min="0"
+          max="1000"
+          oninput="DELAY_TIME = this.value"
+          value="1000"
+        />
+      </div>
+      <div class="length">
+        <span>length:</span>
+        <input
+          oninput="randomize()"
+          type="range"
+          min="2"
+          max="120"
+          value="20"
+        />
+      </div>
+      <button id="randomizeBtn" onclick="randomize()">
+        New Randomized <br />Array
+      </button>
+      <div class="my-info">
+        <a href="https://github.com/ALSHLKANY">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohamed-alshlkany"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </nav>
+    <div class="container"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
